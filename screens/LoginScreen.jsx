@@ -3,12 +3,12 @@ import React from 'react'
 
 export default function LoginScreen() {
     return (
-         <ImageBackground source={{uri: "https://i.pinimg.com/1200x/4f/79/eb/4f79ebb4d16a28911404d20e33a17e75.jpg"}} style = {styles.container}>
+        <ImageBackground source={{uri: "https://i.pinimg.com/1200x/4f/79/eb/4f79ebb4d16a28911404d20e33a17e75.jpg"}} style = {styles.container}>
             <View style = {styles.container1}>
                 <Text style = {styles.butonTxt}>Correo</Text>
                     <TextInput   placeholder='Correo' style= {styles.input}/>
 
-                 <Text style = {styles.butonTxt}>contraseña</Text>
+                <Text style = {styles.butonTxt}>contraseña</Text>
                     <TextInput   placeholder='Contraseña' style= {styles.input}/>
 
                 <TouchableOpacity style= {styles.button}>
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     marginTop: 10,
     width: 200},
-     button: {
+    button: {
     backgroundColor: '#1E3A8A',
     paddingVertical: 12,
     paddingHorizontal: 10,

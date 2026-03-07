@@ -1,0 +1,212 @@
+[
+    {
+      "nombre": "Cien años de soledad",
+      "año": 1967,
+      "autor": "Gabriel García Márquez",
+      "editorial": "Editorial Sudamericana",
+      "precio": 19.99,
+      "imagen_url": "https://picsum.photos/200/300",
+      "descripcion": "Una obra maestra del realismo mágico que narra la historia de la familia Buendía en Macondo, explorando la soledad, el destino y la memoria colectiva en un universo literario único."
+    },
+    {
+      "nombre": "Don Quijote de la Mancha",
+      "año": 1605,
+      "autor": "Miguel de Cervantes",
+      "editorial": "Francisco de Robles",
+      "precio": 24.50,
+      "imagen_url": "https://picsum.photos/200/301",
+      "descripcion": "Relata las aventuras de un hidalgo que enloquece leyendo libros de caballería y decide convertirse en caballero andante, acompañado por su fiel escudero Sancho Panza."
+    },
+    {
+      "nombre": "La sombra del viento",
+      "año": 2001,
+      "autor": "Carlos Ruiz Zafón",
+      "editorial": "Planeta",
+      "precio": 17.75,
+      "imagen_url": "https://picsum.photos/200/302",
+      "descripcion": "Ambientada en la Barcelona de posguerra, un joven descubre un libro misterioso que lo lleva a desentrañar secretos ocultos y un destino marcado por la literatura y el misterio."
+    },
+    {
+      "nombre": "El nombre de la rosa",
+      "año": 1980,
+      "autor": "Umberto Eco",
+      "editorial": "Bompiani",
+      "precio": 21.00,
+      "imagen_url": "https://picsum.photos/200/303",
+      "descripcion": "Un thriller histórico en una abadía medieval donde un monje franciscano investiga muertes misteriosas, reflexionando sobre fe, poder y conocimiento en un contexto religioso y político."
+    },
+    {
+      "nombre": "Rayuela",
+      "año": 1963,
+      "autor": "Julio Cortázar",
+      "editorial": "Editorial Sudamericana",
+      "precio": 18.25,
+      "imagen_url": "https://picsum.photos/200/304",
+      "descripcion": "Novela innovadora que rompe las reglas narrativas tradicionales, invitando al lector a elegir distintos caminos de lectura mientras explora el amor, la filosofía y la vida bohemia."
+    },
+    {
+      "nombre": "Pedro Páramo",
+      "año": 1955,
+      "autor": "Juan Rulfo",
+      "editorial": "Fondo de Cultura Económica",
+      "precio": 15.99,
+      "imagen_url": "https://picsum.photos/200/305",
+      "descripcion": "Un relato intenso sobre un pueblo fantasma y la búsqueda de un hijo por su padre, que refleja la soledad, la muerte y la memoria en la cultura mexicana."
+    },
+    {
+      "nombre": "1984",
+      "año": 1949,
+      "autor": "George Orwell",
+      "editorial": "Secker & Warburg",
+      "precio": 20.00,
+      "imagen_url": "https://picsum.photos/200/306",
+      "descripcion": "Una distopía clásica que describe un mundo totalitario donde el Gran Hermano controla cada aspecto de la vida, cuestionando la libertad, la verdad y la manipulación política."
+    },
+    {
+      "nombre": "Fahrenheit 451",
+      "año": 1953,
+      "autor": "Ray Bradbury",
+      "editorial": "Ballantine Books",
+      "precio": 16.50,
+      "imagen_url": "https://picsum.photos/200/307",
+      "descripcion": "Novela futurista que imagina una sociedad donde los libros están prohibidos y los bomberos queman cualquier ejemplar, reflexionando sobre censura, ignorancia y resistencia cultural."
+    },
+    {
+      "nombre": "Orgullo y prejuicio",
+      "año": 1813,
+      "autor": "Jane Austen",
+      "editorial": "T. Egerton",
+      "precio": 14.99,
+      "imagen_url": "https://picsum.photos/200/308",
+      "descripcion": "Una historia romántica y crítica social que retrata las costumbres de la Inglaterra del siglo XIX, explorando el amor, la clase social y los prejuicios en las relaciones humanas."
+    },
+    {
+      "nombre": "Crimen y castigo",
+      "año": 1866,
+      "autor": "Fiódor Dostoyevski",
+      "editorial": "The Russian Messenger",
+      "precio": 22.00,
+      "imagen_url": "https://picsum.photos/200/309",
+      "descripcion": "Novela psicológica que sigue a un joven estudiante que comete un asesinato y enfrenta las consecuencias morales y espirituales de su crimen, explorando culpa y redención."
+    },
+    {
+      "nombre": "Los miserables",
+      "año": 1862,
+      "autor": "Victor Hugo",
+      "editorial": "A. Lacroix",
+      "precio": 25.00,
+      "imagen_url": "https://picsum.photos/200/310",
+      "descripcion": "Una epopeya sobre justicia, amor y revolución en la Francia del siglo XIX, centrada en la vida de Jean Valjean y su lucha por redimirse en un mundo lleno de desigualdades."
+    },
+    {
+      "nombre": "El principito",
+      "año": 1943,
+      "autor": "Antoine de Saint-Exupéry",
+      "editorial": "Reynal & Hitchcock",
+      "precio": 12.50,
+      "imagen_url": "https://picsum.photos/200/311",
+      "descripcion": "Un cuento filosófico y poético que narra las aventuras de un niño viajero por distintos planetas, reflexionando sobre la amistad, el amor y la esencia de lo verdaderamente importante."
+    },
+    {
+      "nombre": "Moby Dick",
+      "año": 1851,
+      "autor": "Herman Melville",
+      "editorial": "Harper & Brothers",
+      "precio": 19.00,
+      "imagen_url": "https://picsum.photos/200/312",
+      "descripcion": "La historia épica de la obsesión del capitán Ahab por cazar a la gran ballena blanca, explorando la lucha del hombre contra la naturaleza y los límites de la ambición."
+    },
+    {
+      "nombre": "La Odisea",
+      "año": -800,
+      "autor": "Homero",
+      "editorial": "Tradición oral",
+      "precio": 13.99,
+      "imagen_url": "https://picsum.photos/200/313",
+      "descripcion": "Poema épico que relata el largo viaje de Odiseo para regresar a Ítaca tras la guerra de Troya, enfrentando dioses, monstruos y pruebas que ponen a prueba su ingenio y resistencia."
+    },
+    {
+      "nombre": "La Ilíada",
+      "año": -750,
+      "autor": "Homero",
+      "editorial": "Tradición oral",
+      "precio": 13.99,
+      "imagen_url": "https://picsum.photos/200/314",
+      "descripcion": "Poema épico que narra los últimos acontecimientos de la guerra de Troya, destacando la ira de Aquiles y los conflictos entre héroes, dioses y mortales en un mundo mitológico."
+    },
+    {
+      "nombre": "Drácula",
+      "año": 1897,
+      "autor": "Bram Stoker",
+      "editorial": "Archibald Constable",
+      "precio": 18.00,
+      "imagen_url": "https://picsum.photos/200/315",
+      "descripcion": "Una novela gótica que introduce al icónico conde Drácula, explorando el miedo, la seducción y la lucha entre la ciencia moderna y las fuerzas sobrenaturales del mal."
+    },
+    {
+      "nombre": "Frankenstein",
+      "año": 1818,
+      "autor": "Mary Shelley",
+      "editorial": "Lackington, Hughes, Harding, Mavor & Jones",
+      "precio": 17.00,
+      "imagen_url": "https://picsum.photos/200/316",
+      "descripcion": "Historia de un científico que crea vida artificial y enfrenta las consecuencias de su ambición, reflexionando sobre ética, responsabilidad y el aislamiento del ser diferente."
+    },
+    {
+      "nombre": "El señor de los anillos",
+      "año": 1954,
+      "autor": "J.R.R. Tolkien",
+      "editorial": "Allen & Unwin",
+      "precio": 29.99,
+      "imagen_url": "https://picsum.photos/200/317",
+      "descripcion": "Una saga épica de fantasía que sigue"
+    },
+    {
+      "nombre": "Harry Potter y la piedra filosofal",
+      "año": 1997,
+      "autor": "J.K. Rowling",
+      "editorial": "Bloomsbury",
+      "precio": 22.50,
+      "imagen_url": "https://picsum.photos/200/318"
+    },
+    {
+      "nombre": "El alquimista",
+      "año": 1988,
+      "autor": "Paulo Coelho",
+      "editorial": "HarperTorch",
+      "precio": 16.75,
+      "imagen_url": "https://picsum.photos/200/319"
+    },
+    {
+      "nombre": "La casa de los espíritus",
+      "año": 1982,
+      "autor": "Isabel Allende",
+      "editorial": "Editorial Sudamericana",
+      "precio": 18.99,
+      "imagen_url": "https://picsum.photos/200/320"
+    },
+    {
+      "nombre": "Ensayo sobre la ceguera",
+      "año": 1995,
+      "autor": "José Saramago",
+      "editorial": "Caminho",
+      "precio": 20.50,
+      "imagen_url": "https://picsum.photos/200/321"
+    },
+    {
+      "nombre": "El túnel",
+      "año": 1948,
+      "autor": "Ernesto Sabato",
+      "editorial": "Editorial Sudamericana",
+      "precio": 15.50,
+      "imagen_url": "https://picsum.photos/200/322"
+    },
+    {
+      "nombre": "La metamorfosis",
+      "año": 1915,
+      "autor": "Franz Kafka",
+      "editorial": "Kurt Wolff Verlag",
+      "precio": 14.50,
+      "imagen_url": "https://picsum.photos/200/323"
+    }
+  ]
