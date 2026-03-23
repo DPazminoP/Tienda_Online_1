@@ -1,9 +1,11 @@
-import { Button, Image, Modal, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Alert, Button, Image, Modal, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
+import { useNavigation } from "@react-navigation/native";
 
-export default function Tarjeta(props) {
+export default function Tarjeta(props ) {
     //console.log(props.informacion.strCategoryThumb);
-    const [ocultar, setocultar] = useState(false)
+    const [ocultar, setocultar] = useState(false);
+    const  navigation = useNavigation () ;
 
     return (
     <TouchableOpacity 
@@ -34,6 +36,13 @@ export default function Tarjeta(props) {
                         title='cerrar'
                         onPress={()=>setocultar(false)}
                     />
+                    <Button 
+                    title='comprar'
+                    onPress={ () => navigation.navigate('Carrito')}
+                    
+                    >
+
+                    </Button>
                 </View>
             </View>
         </Modal>

@@ -3,7 +3,7 @@ import React from 'react'
 import catalogo from "../assets/data/catalogo.json"
 import Tarjeta from '../components/Tarjeta'
 
-export default function Catalogos() {
+export default function Catalogos( {informacion,navigation}) {
     return (
         <ImageBackground source={{
             uri: "https://i.pinimg.com/1200x/4f/79/eb/4f79ebb4d16a28911404d20e33a17e75.jpg"}} 
@@ -17,7 +17,7 @@ export default function Catalogos() {
                 <FlatList
                     data={catalogo}
                     renderItem={({item})=> 
-                        <Tarjeta informacion={item} />
+                        <Tarjeta informacion={item} navigation={navigation} />
                     }
                     />
             </View>
