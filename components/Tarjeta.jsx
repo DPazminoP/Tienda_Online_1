@@ -12,12 +12,12 @@ export default function Tarjeta(props ) {
 
     const handleComprar = () => {
     agregarAlCarrito({
-      nombre: props.informacion.nombre,
-      autor: props.informacion.autor,
-      precio: props.informacion.precio,
+        nombre: props.informacion.nombre,
+        autor: props.informacion.autor,
+        precio: props.informacion.precio,
     });
     navigation.navigate("Carrito");
-  };
+    };
 
 
 
