@@ -12,6 +12,7 @@ import { NavigationContainer } from "@react-navigation/native";
 //Iconos
 import Entypo from '@expo/vector-icons/Entypo';
 import AntDesign from '@expo/vector-icons/AntDesign';
+import { CarritoProvider } from "../components/CarritoContext";
 
     const Tab=createBottomTabNavigator()
     
@@ -61,8 +62,12 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 
     export function Bottom(){
         return (
-            <NavigationContainer>
+            <CarritoProvider>
+                <NavigationContainer>
                 <MyTabs/>
-            </NavigationContainer>
+             </NavigationContainer>
+
+            </CarritoProvider>
+            
         )
     }

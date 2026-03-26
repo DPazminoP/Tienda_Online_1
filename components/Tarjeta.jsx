@@ -1,11 +1,25 @@
 import { Alert, Button, Image, Modal, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigation } from "@react-navigation/native";
+import { CarritoContext } from '../components/CarritoContext';
 
 export default function Tarjeta(props ) {
     //console.log(props.informacion.strCategoryThumb);
     const [ocultar, setocultar] = useState(false);
     const  navigation = useNavigation () ;
+    const { agregarAlCarrito } = useContext(CarritoContext);
+    
+
+    const handleComprar = () => {
+    agregarAlCarrito({
+      nombre: props.informacion.nombre,
+      autor: props.informacion.autor,
+      precio: props.informacion.precio,
+    });
+    navigation.navigate("Carrito");
+  };
+
+
 
     return (
     <TouchableOpacity 
@@ -27,8 +41,8 @@ export default function Tarjeta(props ) {
                 <View style={styles.modalContainer}>
                     <Text>{props.informacion.nombre}</Text>
                     <Image 
-                        width={400}
-                        height={300}
+                        width={250}
+                        height={250}
                         source={{uri: props.informacion.imagen_url}}
                     />
                     <Text>{props.informacion.descripcion}</Text>
@@ -36,10 +50,10 @@ export default function Tarjeta(props ) {
                         title='cerrar'
                         onPress={()=>setocultar(false)}
                     />
+                    
                     <Button 
                     title='comprar'
-                    onPress={ () => navigation.navigate('Carrito')}
-                    
+                    onPress={ handleComprar}
                     >
 
                     </Button>
@@ -53,11 +67,13 @@ export default function Tarjeta(props ) {
 
 const styles = StyleSheet.create({
     modalContainer:{
+
         
         width:"90%",
         backgroundColor:"#10B981",
         padding:40,
-        borderRadius:20
+        borderRadius:20,
+        gap: 15
     },
 
     modal:{
