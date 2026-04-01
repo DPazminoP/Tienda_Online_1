@@ -3,11 +3,11 @@ import { StyleSheet, Text, View } from 'react-native';
 import WelcomeScreen from './screens/WelcomeScreen';
 import ContactoScreen from './screens/ContactoScreen';
 import LoginScreen from './screens/LoginScreen';
-import { Bottom } from './navigations/BottomNavigator';
+import { Bottom, Navegador } from './navigations/MainNavigator';
 
 export default function App() {
   return (
-    <Bottom/>
+    <Navegador/>
   );
 }
 

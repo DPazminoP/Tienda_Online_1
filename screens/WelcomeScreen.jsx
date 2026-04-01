@@ -1,22 +1,30 @@
 import { Button, Image, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen({navigation}) {
     return (
         <ImageBackground source={{uri: "https://i.pinimg.com/1200x/4f/79/eb/4f79ebb4d16a28911404d20e33a17e75.jpg"}} style={styles.container}>
 
         <View style={styles.saludos}>
             
 
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity 
+                    style={styles.button}
+                    onPress={() => navigation.navigate('Login')}
+                >
                     <Text style={styles.butonTxt}> Comenzar</Text>
-
+                    
                 </TouchableOpacity>
-                 <Image source={require("../assets/pet_5319063.png")} style= {styles.imagenInicio}></Image>
+                    <Image 
+                        source={require("../assets/pet_5319063.png")} 
+                        style= {styles.imagenInicio}>
+                        
+
+                        </Image>
                 
                 <Text> Hola, Bienvenido a la biblioteca MovilCat. En nuestra tienda encontrarás todo tipo de títulos. Ven y explora un mundo en tus manos.
                 </Text>
-               
+        
         </View>
             
         

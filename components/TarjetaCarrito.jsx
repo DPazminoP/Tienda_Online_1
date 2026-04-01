@@ -32,7 +32,7 @@ export default function TarjetaCarrito(props ) {
             <View style={styles.row}>
                 <Text>Precio: $ {props.informacion.precio}</Text>
                 <TouchableOpacity style={styles.botonEliminar} onPress={handleEliminar}>
-                    <Text style={styles.botonTxt}>Eliminar</Text>
+                    <Text style={styles.botonTxt}>🗑️</Text>
                 </TouchableOpacity>
             </View>
         </View>
