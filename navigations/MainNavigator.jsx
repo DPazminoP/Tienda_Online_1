@@ -19,7 +19,7 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 
 
 const Stack = createStackNavigator()
-const Tab=createBottomTabNavigator()
+const Bottom=createBottomTabNavigator()
 
 function MyStack(){
     return(
@@ -32,29 +32,32 @@ function MyStack(){
 
             <Stack.Screen name='Contactos' component={ContactoScreen}/>
             
-            <Stack.Screen name='Tabs' component={MyTabs}/>
+            <Stack.Screen 
+                name='Bottom' 
+                component={MyBottom}
+                options={{ headerShown: false }}/>
         </Stack.Navigator>
     )
 }
 
     
-    function MyTabs(){
+    function MyBottom(){
         return(
-            <Tab.Navigator initialRouteName="Catalogo">
-                <Tab.Screen 
+            <Bottom.Navigator initialRouteName="Catalogo">
+                <Bottom.Screen 
                     name="Catalogo" 
                     component={CatalogoScreen}
                     options={{tabBarIcon:()=><AntDesign name="unordered-list" size={24} color="#1a5d86" />}}
                     />
 
-                <Tab.Screen 
+                <Bottom.Screen 
                     name="Carrito" 
                     component={CarritoScreen}
                     options={{tabBarIcon:()=><AntDesign name="unordered-list" size={24} color="#1a5d86" />}}
                 />                  
 
                 
-            </Tab.Navigator>
+            </Bottom.Navigator>
         )
     }
 

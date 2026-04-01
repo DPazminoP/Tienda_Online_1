@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     imagenInicio:{
         width:80,
         height:80,
-      
+    
         
         
 

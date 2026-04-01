@@ -1,7 +1,7 @@
-import { ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Button, ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-export default function LoginScreen() {
+export default function LoginScreen({navigation}) {
     return (
         <ImageBackground source={{
             uri: "https://i.pinimg.com/1200x/4f/79/eb/4f79ebb4d16a28911404d20e33a17e75.jpg"}} 
@@ -26,6 +26,30 @@ export default function LoginScreen() {
                     <Text style = {styles.butonTxt}> Registrarse </Text>
                 </TouchableOpacity>
 
+            </View>
+
+            <View style={{
+                backgroundColor: "#FACC15", 
+                width: 350, 
+                height: 170,
+                borderColor: "#10B981",  
+                borderWidth: 3,           
+                borderRadius: 10 
+            }}>
+                <Text style={{fontSize:15, textAlign:'center'}}>¿Ya estás registrado?</Text>
+                <Text>_______________________________________________</Text>
+                <Button 
+                    title='Iniciar Sesión'
+                    color={'green'}
+                    onPress={() => navigation.navigate('Login')}
+                />
+                <Text>_______________________________________________</Text>
+                <Text style={{fontSize:15, textAlign:'center'}}>Contáctanos:</Text>
+                <Button 
+                    title='Contactos'
+                    color={'green'}
+                    onPress={() => navigation.navigate('Contactos')}
+                />
             </View>
                     
         

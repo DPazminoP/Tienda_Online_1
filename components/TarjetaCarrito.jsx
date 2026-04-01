@@ -29,12 +29,12 @@ export default function TarjetaCarrito(props ) {
         <View style={styles.container}>
             <Text>{props.informacion.nombre}</Text>
             <Text>Autor: {props.informacion.autor}</Text>
-            <View style={styles.row}>
-                <Text>Precio: $ {props.informacion.precio}</Text>
-                <TouchableOpacity style={styles.botonEliminar} onPress={handleEliminar}>
-                    <Text style={styles.botonTxt}>🗑️</Text>
-                </TouchableOpacity>
-            </View>
+            <Text>Precio: $ {props.informacion.precio}</Text>
+            
+            <TouchableOpacity style={styles.botonEliminar} onPress={handleEliminar}>
+                <Text style={styles.botonTxt}>🗑️</Text>
+            </TouchableOpacity>
+            
         </View>
     )
 }
@@ -61,7 +61,8 @@ const styles = StyleSheet.create({
         backgroundColor: "#DC2626", // rojo
         paddingVertical: 5,
         paddingHorizontal: 10,
-        borderRadius: 5
+        borderRadius: 5,
+        alignItems:"center"
         },
 
 

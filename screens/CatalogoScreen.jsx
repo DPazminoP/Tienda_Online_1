@@ -1,7 +1,19 @@
-import { FlatList, ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Alert, FlatList, ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import catalogo from "../assets/data/catalogo.json"
 import Tarjeta from '../components/Tarjeta'
+
+const cerrarSesion = (navigation) => {
+    Alert.alert(
+            "Cerrar Sesión",
+            "¿Quieres cerrar tu sesión actual?",
+        [
+            {text: "Cancelar" },
+            { text: "Sí", onPress: () => navigation.navigate("Welcome") }
+        ]
+    );
+};
+
 
 export default function Catalogos( {informacion,navigation}) {
     return (
@@ -12,7 +24,29 @@ export default function Catalogos( {informacion,navigation}) {
             
             
             <View>
-                <Text style={{ fontSize: 28, color: '#6a6345', fontWeight: 'bold' }}>Catalogo de libros</Text>
+                <View style={styles.row}>
+                    <TouchableOpacity onPress={() => cerrarSesion(navigation)}>
+                        <Text style={{ 
+                                backgroundColor:'#FFFFFF', 
+                                fontSize: 20, 
+                                textAlign:'right', 
+                                color: '#877523', 
+                        }}>
+                            Cerrar Sesión
+                        </Text>
+                    </TouchableOpacity>
+                    
+                        
+                </View>
+
+                <Text style={{ 
+                    backgroundColor:'#FACC15', 
+                    borderRadius:20,
+                    borderColor: "#10B981", 
+                    fontSize: 28, 
+                    textAlign:'center', 
+                    color: '#6a6345', 
+                    fontWeight: 'bold' }}>Catalogo de libros</Text>
         
                 <FlatList
                     data={catalogo}
@@ -21,6 +55,14 @@ export default function Catalogos( {informacion,navigation}) {
                     }
                     />
             </View>
+
+            <TouchableOpacity 
+                style={styles.fab}
+                onPress={() => navigation.navigate("Carrito")}
+            >
+                <Text style={{ color: "#fff", fontWeight: "bold" }}>Cerrar sesion</Text>
+            </TouchableOpacity>
+
     
 
 

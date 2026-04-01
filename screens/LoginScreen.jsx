@@ -1,4 +1,4 @@
-import { ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Button, ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 
 export default function LoginScreen({navigation}) {
@@ -11,7 +11,7 @@ export default function LoginScreen({navigation}) {
 
     useEffect(() => {
         if(usuario==nick && contrasenia==pass){
-            navigation.navigate('Tabs')
+            navigation.navigate('Bottom')
         }
     }, [usuario, contrasenia])
 
@@ -41,6 +41,32 @@ export default function LoginScreen({navigation}) {
                 </TouchableOpacity>
 
             </View>
+
+            <View style={{
+                backgroundColor: "#FACC15", 
+                width: 350, 
+                height: 170,
+                borderColor: "#10B981",  
+                borderWidth: 3,           
+                borderRadius: 10 
+            }}>
+                <Text style={{fontSize:15, textAlign:'center'}}>¿Aún no estás registrado?</Text>
+                <Text>_______________________________________________</Text>
+                <Button 
+                title='Registrarse'
+                color={'green'}
+                onPress={() => navigation.navigate('Registro')}
+                />
+                <Text>_______________________________________________</Text>
+                <Text style={{fontSize:15, textAlign:'center'}}>Contáctanos:</Text>
+                <Button 
+                title='Contactos'
+                color={'green'}
+                onPress={() => navigation.navigate('Contactos')}
+                />
+            </View>
+
+
                     
         
         
