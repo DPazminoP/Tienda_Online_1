@@ -16,6 +16,7 @@ import { NavigationContainer } from "@react-navigation/native";
 //Iconos
 import Entypo from '@expo/vector-icons/Entypo';
 import AntDesign from '@expo/vector-icons/AntDesign';
+import InfoPagoScreens from '../screens/InfoPagoScreens';
 
 
 const Stack = createStackNavigator()
@@ -54,7 +55,11 @@ function MyStack(){
                     name="Carrito" 
                     component={CarritoScreen}
                     options={{tabBarIcon:()=><AntDesign name="unordered-list" size={24} color="#1a5d86" />}}
-                />                  
+                />  
+                <Bottom.Screen name='pasarela' component={InfoPagoScreens} options={{
+                tabBarButton: () => null,  }}
+                ></Bottom.Screen>  
+
 
                 
             </Bottom.Navigator>

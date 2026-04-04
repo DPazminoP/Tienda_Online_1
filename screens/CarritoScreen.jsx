@@ -1,4 +1,4 @@
-import { ImageBackground, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Alert, ImageBackground, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import { useContext } from "react";
 import { CarritoContext } from "../components/CarritoContext";
@@ -6,12 +6,22 @@ import Tarjeta from '../components/Tarjeta';
 import TarjetaCarrito from '../components/TarjetaCarrito';
 
 
-export default function Carrito(informacion, navigation) {
+export default function Carrito({informacion, navigation}) {
     const { carrito } = useContext(CarritoContext);
     const [precio, setprecio] = useState(0);
     const [iva, setiva] = useState(0);
     const total = carrito.reduce((acc, libro) => acc + libro.precio, 0);
-
+const botonpagar = (navigation) => {
+    
+    Alert.alert(
+            "realizar compras ",
+            "¿Quieres realizar tu compra actual?",
+        [
+            {text: "Cancelar" },
+            { text: "Sí", onPress: () => navigation.navigate("pasarela") }
+        ]
+    );
+};
 
 
 
@@ -30,9 +40,11 @@ export default function Carrito(informacion, navigation) {
             
         </View>
         ))}
-        <View style={styles.container1}>
+        <TouchableOpacity style={styles.container1}  onPress={() => botonpagar (navigation)}>
             <Text style={styles.total}>Total: ${total.toFixed(2)}</Text>
-        </View>
+
+        </TouchableOpacity>
+        
         
 
     </ScrollView>
